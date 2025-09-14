@@ -14,15 +14,20 @@
 <body>
     <h1 class="text-center mt-20 main-heading">Money Split</h1>
     <p class="text-center main-para">An easy way to share expenses and split bills with friends.</p>
-    <div class="main-container border-1 rounded w-xl mx-auto mt-10 shadow-xl">
+    <div class="main-container border-1 rounded w-xl mx-auto mt-5 shadow-xl">
         <div class="div sub-container">
-            <div class="input-container text-center mt-30">
-                
-                <input type="number" id="name" placeholder="Enter the Bill" class="rounded p-2 m-2 text-center">
-                <input type="number" id="amount" placeholder="Number of Person" class="rounded p-2 m-2">
-                 
-                
+            <div class="input-container text-center mt-10">          
+                <input type="number" id="bill" placeholder="Bill Amount" class="rounded p-2 m-3 text-center border input-element">
+                <input type="number" id="people" placeholder="Number of friends" class="rounded p-2 m-2 text-center border input-element">
             </div>
+            <div class="button-container text-center">
+                <button id="btn" class="bg-black hover:bg-white-700 text-white font-bold py-2 px-4 rounded-lg mt-10 btn">SPLIT NOW</button>
+            </div>
+
+            <div class="output mt-20">
+                <h1 class="output-heading text-center" id="output-element"></h1>
+            </div>
+            
         </div>
 
     </div>
